@@ -10,8 +10,8 @@ type Hero struct {
 }
 
 func NewHero() *Hero {
-	return &Hero{
-		Experience: initialExperience,
-		Type:       typeHero,
-	}
+	var hero Hero
+	hero.Experience = initialExperience
+	hero.Type = typeHero
+	return &hero
 }
